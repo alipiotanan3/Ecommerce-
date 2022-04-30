@@ -6,10 +6,10 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 mongoose
-    .connect(process.env.MONGO_URL)
+.connect(process.env.MONGO_URL)
     .then(()=>console.log("Banco connectado com sucesso"))
     .catch((err)=>{console.log(err)})
 
-app.listen(process.env.PORT || 5000, ()=>{
+app.listen(5000, ()=>{
     console.log("servidor rodando")
 })
