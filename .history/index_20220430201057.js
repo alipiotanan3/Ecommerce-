@@ -14,7 +14,7 @@ mongoose
     app.get("/api/tests", ()=>{
         console.log("teste com sucesso")
     })
-    app.use(express.json())
+    app.use(express)
     app.use("/api/users", userRouter);
 
 app.listen(process.env.PORT || 5000, ()=>{
